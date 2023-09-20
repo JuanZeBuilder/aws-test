@@ -7,6 +7,10 @@ application = Flask(__name__)
 def say_hello():
     return "Hello World!"
 
+@application.route("/bye")
+# print a nice greeting.
+def byebye():
+    return "Byebye World!"
 
 # run the app.
 if __name__ == "__main__":
